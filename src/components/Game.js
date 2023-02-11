@@ -19,12 +19,12 @@ const Game = () => {
       reset();
     }
     if (e.key === "w") {
-      position--;
+      if(position >= 7.5)position--;
       paddleLeft.style.setProperty("--position", position);
       paddleRight.style.setProperty("--position", position);
     }
     if (e.key === "s") {
-      position++;
+      if(position <= 92.5)position++;
       paddleLeft.style.setProperty("--position", position);
       paddleRight.style.setProperty("--position", position);
     }
@@ -59,12 +59,24 @@ const Game = () => {
 
   //    ball movement code
 
+  const isCollision = (rect1, rect2) => {
+    return (
+      rect1.left <= rect2.right &&
+      rect1.right >= rect2.left &&
+      rect1.top <= rect2.bottom &&
+      rect1.bottom >= rect2.top
+    )
+  }
+
   const setBallMovement = (delta) => {
     ballPos.x += ballAcc.x * velocity * delta;
     ballPos.y += ballAcc.y * velocity * delta;
 
     moveBall();
+
     const currPixelPos = getCurrentBallPosition();
+    
+    let paddleRecs = [paddleLeftPosition, paddleRightPosition]
 
     if (currPixelPos.bottom >= window.innerHeight || currPixelPos.top <= 0) {
       ballAcc.y *= -1;
@@ -75,7 +87,11 @@ const Game = () => {
       keyPressed = false;
     }
 
-    // if(currPixelPos.left =< paddleLeftPosition.right &&  )
+    if(paddleRecs.some(r=> isCollision(r, currPixelPos))){
+      ballAcc.x *= -1
+    }
+
+    
   };
 
   const moveBall = () => {
@@ -86,20 +102,24 @@ const Game = () => {
   };
 
   //    animate code using requestAnimationFrame
-  let lastTime = 0;
   
-  function animate(time) {
+  
+  let lastTime = 0;
 
+  function animate(time) {
     if (lastTime != null) {
       const delta = time - lastTime;
-      setBallMovement(delta);
+      if(keyPressed) {
+        setBallMovement(delta);
+      }
       
-
     }
+
     lastTime = time;
     window.requestAnimationFrame(animate);
   }
   window.requestAnimationFrame(animate);
+
 };
 
 export default Game;

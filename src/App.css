@@ -25,6 +25,7 @@ h1{
   color: #5ff5f8;
   margin: 0;
   padding: 0;
+  font-size: 4vh;
 }
 
 .myName{
@@ -88,4 +89,36 @@ h1{
   height:2.5vh;
   border-radius:35%
   
+}
+
+.text {
+  margin: 6vh;
+  padding: 3vh;
+  border-style: dashed;
+  border-width: .3vw;
+  border-radius: 5vh;
+
+}
+
+.hint{
+  color: #7ef20d;
+  margin:7.5vh 50vw; 
+  transform: translate(-50%, 0);
+  font-size:3vh;
+  border-radius: 1vh;
+  position:absolute;
+}
+
+.powerBlock{
+  background-color: #810df2;
+  padding: 0 1vh;
+  color:rgb(240, 248, 255);
+  font-weight: bold;
+}
+
+.subtitle{
+  color: #5ff5f8;
+  margin-bottom: 2vh;
+  border-radius: 1vh;
+  font-weight: bold;
 }
