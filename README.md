@@ -1,3 +1,6 @@
+--This is my Portfolio web build, using Js and React Js to create an interactive resume with Pong.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
