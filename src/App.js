@@ -6,6 +6,8 @@ function App() {
   return (
     <>
       <div style={{ position: "absolute" }}>
+      <Board />
+        <Game id="Game" />
         <div className="hint">
           <a
             href="https://www.linkedin.com/in/francisco-a-78ba8811a/"
@@ -90,8 +92,7 @@ function App() {
         <h1 className="myName" id="myName">
           Francisco Aparicio
         </h1>
-        <Board />
-        <Game id="Game" />
+      
       </div>
     </>
   );
