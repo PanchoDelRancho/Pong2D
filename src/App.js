@@ -37,7 +37,7 @@ function App() {
           <text className="powerBlock"> value </text> to your company through my
           work.
         </div>
-        <h1 className="zone">Projects</h1>
+        <div className="zone">Projects</div>
         <div className="text">
           <div className="subtitle">Portfolio Pong</div>A self lead project I
           created using Javascript Html and css with a sprinkle of{" "}
