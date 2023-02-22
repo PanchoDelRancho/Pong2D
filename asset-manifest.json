@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Pong2D/static/css/main.4eb9615a.css",
-    "main.js": "/Pong2D/static/js/main.a6b6e9c7.js",
+    "main.js": "/Pong2D/static/js/main.baf6dccf.js",
     "static/js/787.ef0c2fdc.chunk.js": "/Pong2D/static/js/787.ef0c2fdc.chunk.js",
     "index.html": "/Pong2D/index.html",
     "main.4eb9615a.css.map": "/Pong2D/static/css/main.4eb9615a.css.map",
-    "main.a6b6e9c7.js.map": "/Pong2D/static/js/main.a6b6e9c7.js.map",
+    "main.baf6dccf.js.map": "/Pong2D/static/js/main.baf6dccf.js.map",
     "787.ef0c2fdc.chunk.js.map": "/Pong2D/static/js/787.ef0c2fdc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4eb9615a.css",
-    "static/js/main.a6b6e9c7.js"
+    "static/js/main.baf6dccf.js"
   ]
 }
