@@ -15,7 +15,7 @@ function App() {
           >
             LinkedIn
           </a>
-          (a,s)
+          (w,s)
           <a href="https://github.com/PanchoDelRancho" className="link">
             GitHub
           </a>
